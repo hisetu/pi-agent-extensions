@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "Apache-2.0",
-  "description": "Pi extensions maintained by hisetu",
+  "description": "Shared Pi extensions",
   "keywords": ["pi-package"],
   "pi": {
     "extensions": ["./extensions"]
