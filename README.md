@@ -1,0 +1,44 @@
+# pi-agent-extensions
+
+Pi extensions maintained by `hisetu`.
+
+## Install
+
+```bash
+pi install git:github.com/hisetu/pi-agent-extensions
+```
+
+Or load directly for one run:
+
+```bash
+pi -e git:github.com/hisetu/pi-agent-extensions
+```
+
+## Included extensions
+
+### `extensions/loop.ts`
+
+A follow-up loop extension that adds `/loop` and `signal_loop_success`.
+
+Behavior added in this repo:
+
+- Retries AI API errors at most **3 times**
+- Shows a **sanitized user-facing error** in the UI
+- Keeps the **full raw error** in the session log
+- Stops the loop automatically after the retry limit is exceeded
+
+Examples of sanitized errors:
+
+- `413 failed to parse request`
+- `input too long`
+- `No API key for provider: github-copilot`
+- `Connection error`
+- `Request timed out`
+
+## Development
+
+After cloning locally, symlink or copy the extension into a Pi extensions directory, or install from the local path:
+
+```bash
+pi install /absolute/path/to/pi-agent-extensions
+```
