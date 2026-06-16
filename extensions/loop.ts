@@ -1,8 +1,11 @@
 /**
  * Loop Extension
  *
- * Original author: Lucas (hisetu)
- * Maintained here as part of pi-agent-extensions.
+ * Adapted from:
+ * https://github.com/mitsuhiko/agent-stuff/blob/main/extensions/loop.ts
+ *
+ * Upstream project: mitsuhiko/agent-stuff
+ * License: Apache-2.0
  *
  * Provides a /loop command that starts a follow-up loop with a breakout condition.
  * The loop keeps sending a prompt on turn end until the agent calls the

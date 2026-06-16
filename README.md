@@ -21,7 +21,9 @@ pi -e git:github.com/hisetu/pi-agent-extensions
 A follow-up loop extension that adds `/loop` and `signal_loop_success`.
 
 Attribution:
-- Original author: **Lucas (hisetu)**
+- Adapted from **[`mitsuhiko/agent-stuff`](https://github.com/mitsuhiko/agent-stuff)**
+- Upstream file: `extensions/loop.ts`
+- Upstream license: **Apache-2.0**
 - This repository packages and maintains the extension for reuse
 
 Behavior added in this repo:
