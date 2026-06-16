@@ -1,6 +1,9 @@
 /**
  * Loop Extension
  *
+ * Original author: Lucas (hisetu)
+ * Maintained here as part of pi-agent-extensions.
+ *
  * Provides a /loop command that starts a follow-up loop with a breakout condition.
  * The loop keeps sending a prompt on turn end until the agent calls the
  * signal_loop_success tool.

@@ -20,6 +20,10 @@ pi -e git:github.com/hisetu/pi-agent-extensions
 
 A follow-up loop extension that adds `/loop` and `signal_loop_success`.
 
+Attribution:
+- Original author: **Lucas (hisetu)**
+- This repository packages and maintains the extension for reuse
+
 Behavior added in this repo:
 
 - Retries AI API errors at most **3 times**
