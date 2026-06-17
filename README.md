@@ -8,6 +8,14 @@ Pi extensions maintained by `hisetu`.
 pi install git:github.com/hisetu/pi-agent-extensions
 ```
 
+Or reference this repo directly in `~/.pi/agent/settings.json`:
+
+```json
+{
+  "packages": ["git:github.com/hisetu/pi-agent-extensions"]
+}
+```
+
 Or load directly for one run:
 
 ```bash
@@ -15,6 +23,14 @@ pi -e git:github.com/hisetu/pi-agent-extensions
 ```
 
 ## Included extensions
+
+### `extensions/hostname-footer.ts`
+
+A tiny extension that shows the local machine hostname in Pi's footer using `ctx.ui.setStatus()`.
+
+Example footer text:
+
+- `🖥 my-macbook-pro`
 
 ### `extensions/loop.ts`
 
