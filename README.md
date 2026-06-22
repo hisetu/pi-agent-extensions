@@ -32,6 +32,17 @@ Example footer text:
 
 - `🖥 my-macbook-pro`
 
+### `extensions/prompt-stash.ts`
+
+An interactive prompt stash manager.
+
+Features:
+
+- adds `/prompt-stash`
+- saves the current editor content with `Ctrl+S` inside the stash overlay
+- previews saved prompts in an overlay UI
+- supports loading into the editor, sending now, sending as steering/follow-up, editing, and deleting
+
 ### `extensions/loop.ts`
 
 A follow-up loop extension that adds `/loop` and `signal_loop_success`.
