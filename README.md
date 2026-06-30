@@ -57,6 +57,16 @@ Examples of sanitized errors:
 - `Connection error`
 - `Request timed out`
 
+### `extensions/split-fork.ts`
+
+A session forking extension that adds `/split-fork`.
+
+Behavior:
+
+- inside **herdr**: uses `herdr pane split` + `herdr pane run`
+- outside herdr on **macOS**: falls back to a right-hand **Ghostty** split
+- copies the current persisted session branch into a new session file before launching the new Pi instance
+
 ## Development
 
 After cloning locally, symlink or copy the extension into a Pi extensions directory, or install from the local path:
