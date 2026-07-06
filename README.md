@@ -78,6 +78,18 @@ Behavior:
 - outside herdr on **macOS**: falls back to a right-hand **Ghostty** split
 - copies the current persisted session branch into a new session file before launching the new Pi instance
 
+### `extensions/codegraph-auto-sync.ts`
+
+A CodeGraph autosync extension that adds `/codegraph-autosync`.
+
+Behavior:
+
+- watches file mutation tools like `edit` and `write`
+- finds the nearest **initialized** `.codegraph` project from the current cwd or edited file path
+- queues and runs `codegraph sync` automatically at `agent_end`
+- avoids noisy sync/status failures for directories that merely contain a `.codegraph` folder but are not initialized
+- shows merged footer status like `cg(↻): ready (...)` and `cg(↻): syncing (...)`
+
 ## Development
 
 After cloning locally, symlink or copy the extension into a Pi extensions directory, or install from the local path:
